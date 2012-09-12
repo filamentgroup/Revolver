@@ -1,5 +1,5 @@
 /*
- * Revolverresponsive-carousel
+ * Revolver
  * https://github.com/filamentgroup/revolver
  *
  * Copyright (c) 2012 Filament Group, Inc.
@@ -7,7 +7,7 @@
  */
 
 (function($) {
-  var pluginName = "threesixty",
+  var pluginName = "revolver",
     initSelector = "." + pluginName,
     itemClass = pluginName + "-item",
     activeClass = pluginName + "-active",
@@ -39,9 +39,8 @@
         .addClass( activeClass );
       },
 
-      _reset: function() {
-        $( ".dialog-360" ).removeClass( "fadeout" );
-        $( "." + itemClass ).addClass( "introslide" );
+      _destroy: function() {
+        // TODO
       }
     };
     
@@ -84,7 +83,7 @@
  */
 
  (function($) {
-  var pluginName = "threesixty",
+  var pluginName = "revolver",
     initSelector = "." + pluginName,
     noTrans = pluginName + "-no-transition",
     touchMethods = {
@@ -151,7 +150,7 @@
  }(jQuery));
 
  (function($) {
-  var pluginName = "threesixty",
+  var pluginName = "revolver",
     initSelector = "." + pluginName,
     activeClass = pluginName + "-active",
     itemClass = pluginName + "-item",
@@ -184,12 +183,12 @@
         clicked = false;
       }
     },
-    getActiveSlides = function( $carousel, data ){
+    getActiveSlides = function( $revolver, data ){
       var $from = $( data.srcEvent.target ),
         activeNum = $from.prevAll().length + 1,
         forward = data.deltaX < 0,
         nextNum = activeNum + (forward ? 1 : -1),
-        $children = $carousel.find( "." + itemClass ),
+        $children = $revolver.find( "." + itemClass ),
         $to = $children.eq( nextNum - 1 );
 
       if( !$to.length ){
@@ -223,20 +222,11 @@
 }(jQuery));
 
 (function($) {
-  var pluginName = "threesixty",
+  var pluginName = "revolver",
     initSelector = "." + pluginName;
-
-  // DOM-ready auto-init
-  $( ".carousel" ).live( "ajaxInclude", function(){
-    $( initSelector )[ pluginName ]( "_create" );
-  } );
 
   $( initSelector ).live( "dragstart dragmove drag", function( e ) {
     var $el = $( e.target );
-  } );
-
-  $( ".carousel-nav a, .all-images a, .gallery-filters a" ).live( "click", function() {
-    $( initSelector )[ pluginName ]( "_reset" );
   } );
 
 }(jQuery));
