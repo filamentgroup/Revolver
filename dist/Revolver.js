@@ -30,7 +30,6 @@
         return $( this ).addClass( pluginName + " " + pluginName + "-slide " )
         .append( $dupe )
         .children()
-        .addClass( itemClass + " introslide")
         .first()
         .addClass( activeClass );
       },
