@@ -23,6 +23,12 @@ module.exports = function(grunt) {
         dest: 'dist/<%= pkg.name %>.min.js'
       }
     },
+    cssmin: {
+      dist: {
+        src: ['<banner:meta.banner>', 'src/**/*.css'],
+        dest: 'dist/<%= pkg.name %>.min.css'
+      }
+    },
     qunit: {
       files: ['test/**/*.html']
     },
@@ -54,7 +60,8 @@ module.exports = function(grunt) {
     uglify: {}
   });
 
+  grunt.loadNpmTasks('grunt-css');
   // Default task.
-  grunt.registerTask('default', 'lint qunit concat min');
+  grunt.registerTask('default', 'lint qunit concat min cssmin');
 
 };
