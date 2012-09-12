@@ -13,11 +13,10 @@ In your web page:
 ```html
 <script src="jquery.js"></script>
 <script src="dist/Revolver.min.js"></script>
-<script>
-jQuery(function($) {
-  $.awesome(); // "awesome"
-});
-</script>
+
+<div class="revolver">
+    <img src="360.photo" alt="">
+</div>
 ```
 
 ## Documentation
@@ -35,5 +34,5 @@ _Also, please don't edit files in the "dist" subdirectory as they are generated 
 _(Nothing yet)_
 
 ## License
-Copyright (c) 2012 Mat Marquis  
+Copyright (c) 2012 Filament Group
 Licensed under the MIT license.
