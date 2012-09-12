@@ -14,6 +14,8 @@ In your web page:
 <script src="jquery.js"></script>
 <script src="dist/Revolver.min.js"></script>
 
+<link rel="stylesheet" href="dist/Revolver.min.css">
+
 <div class="revolver">
     <img src="360.photo" alt="">
 </div>
