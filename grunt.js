@@ -13,7 +13,12 @@ module.exports = function(grunt) {
     },
     concat: {
       dist: {
-        src: ['<banner:meta.banner>', '<file_strip_banner:src/<%= pkg.name %>.js>'],
+        src: [
+          '<banner:meta.banner>',
+          '<file_strip_banner:src/revolver.core.js>',
+          '<file_strip_banner:src/carousel.touchdrag.js>',
+          '<file_strip_banner:src/revolver.init.js>'
+        ],
         dest: 'dist/<%= pkg.name %>.js'
       }
     },

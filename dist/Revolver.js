@@ -1,4 +1,4 @@
-/*! Revolver - v0.1.0 - 2012-09-12
+/*! Revolver - v0.1.0 - 2012-09-13
 * https://github.com/filamentgroup/Revolver
 * Copyright (c) 2012 Mat Marquis; Licensed MIT */
 
@@ -69,16 +69,7 @@
   } );
 
 }(jQuery));
-
-/*
- * responsive-carousel touch drag extension
- * https://github.com/filamentgroup/responsive-carousel
- *
- * Copyright (c) 2012 Filament Group, Inc.
- * Licensed under the MIT, GPL licenses.
- */
-
- (function($) {
+(function($) {
   var pluginName = "revolver",
     initSelector = "." + pluginName,
     noTrans = pluginName + "-no-transition",
@@ -94,7 +85,7 @@
               $elem = $( e.target ).closest( initSelector );
             
             if( e.type === "touchstart" ){
-              origin = { 
+              origin = {
                 x : touches[ 0 ].pageX,
                 y: touches[ 0 ].pageY
               };
@@ -144,6 +135,7 @@
   } );
 
  }(jQuery));
+
 
  (function($) {
   var pluginName = "revolver",
@@ -226,4 +218,3 @@
   } );
 
 }(jQuery));
-
