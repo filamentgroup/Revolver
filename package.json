@@ -1,28 +1,38 @@
 {
-  "name": "Revolver",
-  "title": "Revolver",
-  "description": "A 360° panorama photo viewer.",
-  "version": "0.1.0",
-  "homepage": "https://github.com/filamentgroup/Revolver",
-  "author": {
-    "name": "Mat Marquis",
-    "email": "mat@matmarquis.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:filamentgroup/Revolver.git"
-  },
-  "bugs": {
-    "url": "https://github.com/filamentgroup/Revolver/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/filamentgroup/Revolver/blob/master/LICENSE-MIT"
-    }
-  ],
-  "dependencies": {
-    "jquery": "~1.5"
-  },
-  "keywords": []
+	"name": "Revolver",
+	"title": "Revolver",
+	"description": "A 360° panorama photo viewer.",
+	"version": "0.1.0",
+	"homepage": "https://github.com/filamentgroup/Revolver",
+	"author": {
+		"name": "Mat Marquis",
+		"email": "mat@matmarquis.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:filamentgroup/Revolver.git"
+	},
+	"bugs": {
+		"url": "https://github.com/filamentgroup/Revolver/issues"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/filamentgroup/Revolver/blob/master/LICENSE-MIT"
+		}
+	],
+	"main": "dist/Revolver.js",
+	"engines": {
+		"node": ">0.6"
+	},
+	"scripts":{
+		"test" : "grunt travis --verbose"
+	},
+	"dependencies": {
+		"jquery": "~1.7.2"
+	},
+	"devDependencies": {
+		"grunt": "~0.3.17"
+	},
+	"keywords": []
 }
