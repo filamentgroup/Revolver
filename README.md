@@ -2,6 +2,8 @@
 
 A 360° panorama photo viewer.
 
+[![Build Status](https://secure.travis-ci.org/filamentgroup/Revolver.png)](http://travis-ci.org/filamentgroup/Revolver)
+
 ## Getting Started
 Download the [production version][min] or the [development version][max].
 
