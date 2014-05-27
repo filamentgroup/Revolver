@@ -12,9 +12,29 @@
 		.wrap {
 			max-width: 1000px;
 		}
+		/* Logo */
+		.header {
+			background: #247201 url(http://filamentgroup.com/images/headerbg-new.jpg) no-repeat bottom left;
+		}
+		#fg-logo {
+			text-indent: -9999px;
+			margin: 0 auto;
+			width: 287px;
+			height: 52px;
+			background-image: url(http://filamentgroup.com/images/fg-logo-icon.png);
+		}
+		@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5){
+			#fg-logo {
+				background-size: 287px 52px;
+				background-image: url(http://filamentgroup.com/images/fg-logo-icon-lrg.png);
+			}
+		}
 	</style>
 </head>
 <body>
+	<div class="header">
+		<a href="http://filamentgroup.com/"><h1 id="fg-logo">Filament Group</h1></a>
+	</div>
 	<figure class="wrap">
 		<div class="revolver">
 			<img src="Space_Needle_360_Panorama.png">
