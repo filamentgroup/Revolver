@@ -12,7 +12,7 @@
       var data = {};
       if( e.type === "mousedown" ) {
         clicked = true;
-        origin = { 
+        origin = {
           x : e.pageX,
           e : e
         };
@@ -49,7 +49,7 @@
 
   $( initSelector )
     // Touch handling
-    .live( "dragstart dragmove", function( e, data ){
+    .on( "dragstart dragmove", function( e, data ){
       var activeSlides = getActiveSlides( $( this ), data ),
         swipeSpeed = data.deltaX * 3.5,
         width = activeSlides[ 0 ].width(),
@@ -64,18 +64,18 @@
 
       e.stopPropagation();
     } )
-    .live( "dragend dragmove", function( e ) {
+    .on( "dragend dragmove", function( e ) {
       e.stopPropagation();
     })
     // Mouse handling
-    .live( "mousedown mousemove mouseup", mouseDrag );
+    .on( "mousedown mousemove mouseup", mouseDrag );
 }(jQuery));
 
 (function($) {
   var pluginName = "revolver",
     initSelector = "." + pluginName;
 
-  $( initSelector ).live( "dragstart dragmove drag", function( e ) {
+  $( initSelector ).on( "dragstart dragmove drag", function( e ) {
     var $el = $( e.target );
   } );
 
