@@ -1,3 +1,5 @@
+:warning: This project is archived and the repository is no longer maintained.
+
 # Revolver [![Build Status](https://secure.travis-ci.org/filamentgroup/Revolver.png)](http://travis-ci.org/filamentgroup/Revolver)
 
 [![Filament Group](http://filamentgroup.com/images/fg-logo-positive-sm-crop.png) ](http://www.filamentgroup.com/)
